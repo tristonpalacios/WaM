@@ -1,87 +1,35 @@
-h1{
-    text-align: center;
+body{
+    
 }
 
-.game
-{
-	width: 60vw;
-	height: 60vh;
-	margin: 50px auto;
-  background-color: white;
-  color: #fff;
-  border: 6px solid brown;
-  border-radius: 10px;
-	display: grid;
-	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-}
 
-.hole
-{
-  border: 1px solid brown;
-  border-radius: 2px;
-  display: grid;
+.flex-container{
+ display: grid;
+ grid-template-rows: 3 1fr;
+ grid-template-columns: 3 1fr 1fr 1fr;
+ /* border: red solid 2px; */
   justify-content: center;
   align-items: center;
+  margin: 1fr;
+  
 }
 
-.button{
+h1{
     text-align: center;
+    grid-row: 1;
     grid-column: 2;
-    margin: 2px 2px 2px 2px;
 }
 
-.chars{
-    display: grid;
-    grid-template-columns: 500px 50px 500px;
-    grid-template-rows: auto;
-  
-    box-sizing: border-box;
-    width: 500px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    background: rgba(114, 186, 94, 0.05);
-    border: 2px dashed rgba(114, 186, 94, 0.35);
 
-    justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
-    
-}
-.moleHunter{
-    box-sizing: border-box;
-    width: 500px;
-    height: 500px;
-    background: rgba(255, 213, 70, 0.4);
-    border: 2px dashed rgba(236, 198, 48, 0.5);
-    grid-column: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .creativity{
-    box-sizing: border-box;
-    width: 500px;
-    height: 500px;
-    background: rgba(255, 213, 70, 0.4);
-    border: 2px dashed rgba(236, 198, 48, 0.5);
-    grid-column: 1;
-    grid-row: 1;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-
+    grid-column: 3;
+    grid-row: 2;
+    margin: auto;
 }
 
-.image{
+.moleHunter{
     grid-row: 2;
     grid-column: 1;
 }
@@ -92,6 +40,52 @@ h1{
 
 #score{
     text-align: center;
-    grid-column: 2;
     font-size: 35px;
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 100%;
+    font-size: 2em;
+}
+#lives{
+    text-align: center;
+    grid-column: 3;
+    grid-row: 3;
+    max-width: 100px;
+    font-size: 1.3em;
+    margin: auto;
+    
+}
+.starter{
+    grid-column: 2;
+    grid-row: 3;
+    margin: auto;
+}
+
+.game
+{
+	width: 60vw;
+	height: 60vh;
+	margin: 50px auto;
+   imag
+  color: #fff;
+  border-radius: 10px;
+	display: grid;
+	grid-template: repeat(3, .5fr) / repeat(3, .5fr);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hole
+{
+    border: solid red 1px;
+    border-image: url(/IMG_0260.PNG ) 30 stretch;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.button{
+    grid-column: 2;
+    text-align: center;
 }
