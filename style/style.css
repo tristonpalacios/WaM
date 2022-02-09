@@ -98,7 +98,7 @@ h1{
     grid-row: 5;
     margin: 10 auto;
     font-size: 35px;
-    background-image: url(/simon-sanchez-madera-tilex1.jpeg);
+    background-image: url(simon-sanchez-madera-tilex1.jpeg);
     color: white;
     padding: 20px;
 }
@@ -110,7 +110,7 @@ h1{
 
 #restartButton{
     margin: 25px 25px 80px auto;
-    background-image: url(/simon-sanchez-madera-tilex1.jpeg);
+    background-image: url(simon-sanchez-madera-tilex1.jpeg);
     font-size: 35px;
     color: white;
 }
@@ -132,7 +132,7 @@ h1{
 .hole
 {
     border: solid brown 1px;
-    border-image: url(/grass.jpeg) 30 / 15px / 15px round;
+    border-image: url(grass.jpeg) 30 / 15px / 15px round;
 
   display: grid;
   justify-content: center;
@@ -140,7 +140,7 @@ h1{
   border-radius: ;
   background-image: url();
   background-size: cover;
-  cursor: url(/Hammer\ Clicker.png), pointer ;
+  cursor: url(Hammer\ Clicker.png), pointer ;
 
   
  
@@ -153,7 +153,7 @@ h1{
     grid-row: 7;
     grid-column: 1/ span 3;
     text-align: center;
-    background-image: url(/simon-sanchez-madera-tilex1.jpeg);
+    background-image: url(simon-sanchez-madera-tilex1.jpeg);
 }
 
 .restart{
