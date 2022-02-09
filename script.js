@@ -8,6 +8,7 @@ let hitSound = new Audio('mixkit-little-squeak-1018.wav')
 let missSound = new Audio(`mixkit-cartoon-voice-laugh-343.wav`)
 let gOverSound = new Audio(`mixkit-funny-fail-low-tone-2876.wav`)
 let startSound = new Audio(`mixkit-arcade-game-opener-222.wav`)
+startSound.volume = 0.1;
 // const score = scoreOrigin.innerText
 
 // Hide start button on click
