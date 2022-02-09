@@ -6,6 +6,10 @@
     
 }
 
+#scrnum{
+    color: red;
+    font-size: 44px;
+}
 
 .flex-container{
  display: grid;

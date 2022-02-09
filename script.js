@@ -45,7 +45,7 @@ arrayOfMoles.forEach(function (elem) {
     ).innerText = `You gave that mole a SHMACKIN`
     score++;
     console.log(`The score is ${score}`);
-    document.getElementById("score").innerText = `Score:${score}`;
+    document.getElementById("scrnum").innerText = `${score}`;
     clickedMoles = clickedMoles + 1;
   });
 });
@@ -146,13 +146,13 @@ let game = function RunGame() {
           "livemes"
         ).innerText = `A mole got in!`;
         missSound.play();
-        document.getElementById('liveimage').src='/two heart.png';
+        document.getElementById('liveimage').src='two heart.png';
       } else if(lives === 1){
         document.getElementById(
           "livemes"
         ).innerText = `Another mole got in!`;
         missSound.play();
-        document.getElementById('liveimage').src='/one heart.png'
+        document.getElementById('liveimage').src='one heart.png'
       }else if(lives === 0){
         document.getElementById('liveimage').src='no hearts.png'
     }
@@ -171,7 +171,7 @@ let reset = function resetGame() {
   lives = 3;
   moleCounter = 0;
   game();
-  document.getElementById('liveimage').src='/three heart.png';
+  document.getElementById('liveimage').src='three heart.png';
   rstBtn.classList.add("hide");
   startSound.play();
 
