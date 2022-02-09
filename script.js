@@ -131,6 +131,7 @@ let game = function RunGame() {
     document.getElementById('liveimage').src='no hearts.png';
     rstBtn.classList.remove("hide");
     gOverSound.play();
+    score = score - score;
 
     // document.getElementsByClassName(`button`).classList.remove(`hide`);
   }
@@ -158,22 +159,22 @@ let game = function RunGame() {
     }
   }
   strBtn.classList.add(`hide`);
-
+return score
 }
   
 };
 
 //Reset button. Needs to start game over and store scores
 let reset = function resetGame() {
-  score = 0;
-  document.getElementById("score").innerText = score;
-  game;
+  score = score - score;
+  clickedMoles=0;
   lives = 3;
   moleCounter = 0;
   game();
   document.getElementById('liveimage').src='three heart.png';
   rstBtn.classList.add("hide");
   startSound.play();
+  document.getElementById("scrnum").innerText = `${score}`;
 
 };
 rstBtn.addEventListener("click", reset);
