@@ -4,6 +4,10 @@ const rstBtn = document.getElementById("restartButton");
 scoreOrigin = document.getElementById("score").innerText;
 livesOrgin = document.getElementById("lives").innerText;
 const strBtn = document.getElementById(`startbtn`);
+let hitSound = new Audio('mixkit-little-squeak-1018.wav')
+let missSound = new Audio(`mixkit-cartoon-voice-laugh-343.wav`)
+let gOverSound = new Audio(`mixkit-funny-fail-low-tone-2876.wav`)
+let startSound = new Audio(`mixkit-arcade-game-opener-222.wav`)
 // const score = scoreOrigin.innerText
 
 // Hide start button on click
@@ -28,12 +32,20 @@ moleCounter = 0;
 // Hides moles on click (testing for what will become Whack!)
 arrayOfMoles.forEach(function (elem) {
   elem.addEventListener("mousedown", function () {
+    const hole = randomHole(arrayOfMoles)
     //this function does stuff when you click
+    // hole.classList.add("glow");
     elem.classList.add(`hide`);
+    hitSound.play();
     console.log(`YOU HIT DA MOLE`);
+   
+      elem.classList.add("glow");
+    document.getElementById(
+      "livemes"
+    ).innerText = `You gave that mole a SHMACKIN`
     score++;
     console.log(`The score is ${score}`);
-    document.getElementById("score").innerText = `The score is ${score}`;
+    document.getElementById("score").innerText = `Score:${score}`;
     clickedMoles = clickedMoles + 1;
   });
 });
@@ -82,6 +94,8 @@ function randomHole(arrayOfMoles) {
 
 let game = function RunGame() {
   let int = setInterval(molePeep, 3000);
+  strBtn.classList.add(`hide`);
+  startSound.play();
 
   function molePeep() {
     const time = randomTime(400, 1500);
@@ -90,6 +104,11 @@ let game = function RunGame() {
     setTimeout(() => {
       hole.classList.add("hide");
     }, time);
+    setTimeout(() => {
+      hole.classList.remove("glow");
+    }, time);
+    
+  
     moleCounter++;
     console.log(`${moleCounter} moles have appeared`);
     // lifeCounter()
@@ -107,8 +126,11 @@ let game = function RunGame() {
     clearInterval(int);
     console.log(`End of Game`);
     document.getElementById(
-      "lives"
-    ).innerText = `The moles have overtaken the farm!`;
+      "livemes"
+    ).innerText = `The moles overtook the farm!`;
+    document.getElementById('liveimage').src='no hearts.png';
+    rstBtn.classList.remove("hide");
+    gOverSound.play();
 
     // document.getElementsByClassName(`button`).classList.remove(`hide`);
   }
@@ -117,13 +139,27 @@ let game = function RunGame() {
     if (clickedMoles < moleCounter) {
       moleCounter = moleCounter - 1;
       lives = lives - 1;
-      document.getElementById("lives").innerText = lives;
       if (lives < 1) {
         endgame();
-      }
+      }else if(lives === 2){
+        document.getElementById(
+          "livemes"
+        ).innerText = `A mole got in!`;
+        missSound.play();
+        document.getElementById('liveimage').src='/two heart.png';
+      } else if(lives === 1){
+        document.getElementById(
+          "livemes"
+        ).innerText = `Another mole got in!`;
+        missSound.play();
+        document.getElementById('liveimage').src='/one heart.png'
+      }else if(lives === 0){
+        document.getElementById('liveimage').src='no hearts.png'
     }
   }
   strBtn.classList.add(`hide`);
+
+}
   
 };
 
@@ -135,7 +171,10 @@ let reset = function resetGame() {
   lives = 3;
   moleCounter = 0;
   game();
-  document.getElementById("lives").innerText = lives;
+  document.getElementById('liveimage').src='/three heart.png';
+  rstBtn.classList.add("hide");
+  startSound.play();
+
 };
 rstBtn.addEventListener("click", reset);
 

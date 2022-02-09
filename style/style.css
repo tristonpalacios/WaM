@@ -2,17 +2,20 @@
 
 *{
     font-family: 'DotGothic16', sans-serif;
+    
+    
 }
 
 
 .flex-container{
  display: grid;
- grid-template-rows: 4 1fr;
+ grid-template-rows: 5 1fr;
  grid-template-columns: 3 1fr 1fr 1fr;
  /* border: red solid 2px; */
   justify-content: center;
   align-items: center;
   margin: 1fr;
+  background-image: ;
   
 }
 
@@ -23,7 +26,27 @@ h1{
     font-size: 80px;
 }
 
+.nameOne{
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    font-size: 35px;
+}
 
+.nameTwo{
+    grid-column: 3;
+    grid-row: 3;
+    text-align: center;
+    font-size: 35px;
+}
+
+.vs{
+    grid-column: 2;
+    grid-row:2 ;
+    text-align: center;
+    font-size: 80px;
+    
+}
 
 
 .creativity{
@@ -41,20 +64,26 @@ h1{
     display: none;
 }
 
+.varMessage{
+    grid-column: 2;
+    grid-row: 4;
+    text-align: center;
+    font-size: 35px;
+}
 
 
 #score{
     text-align: center;
     font-size: 35px;
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
     max-width: 100%;
     font-size: 2em;
 }
 #lives{
     text-align: center;
     grid-column: 3;
-    grid-row: 3;
+    grid-row: 4;
     max-width: 100px;
     font-size: 1.3em;
     margin: auto;
@@ -62,13 +91,24 @@ h1{
 }
 .starter{
     grid-column: 2;
-    grid-row: 4;
-    margin: auto;
+    grid-row: 5;
+    margin: 10 auto;
     font-size: 35px;
+    background-image: url(/simon-sanchez-madera-tilex1.jpeg);
+    color: white;
+    padding: 20px;
+}
+
+.starter:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px green;
 }
 
 #restartButton{
+    margin: 25px 25px 80px auto;
+    background-image: url(/simon-sanchez-madera-tilex1.jpeg);
     font-size: 35px;
+    color: white;
 }
 
 .game
@@ -87,22 +127,58 @@ h1{
 
 .hole
 {
-    border: solid red 1px;
+    border: solid brown 1px;
+    border-image: url(/grass.jpeg) 30 / 15px / 15px round;
+
   display: grid;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
+  border-radius: ;
+  background-image: url();
+  background-size: cover;
+  cursor: url(/Hammer\ Clicker.png), pointer ;
+
+  
  
   
 }
 
-.button{
+.DIY{
+    font-size: 35px;
+    background-color: red;
+    grid-row: 7;
+    grid-column: 1/ span 3;
+    text-align: center;
+    background-image: url(/simon-sanchez-madera-tilex1.jpeg);
+}
+
+.restart{
     grid-column: 2;
     text-align: center;
     font-size: 35px;
+    padding: 20px;
+   
+
 }
 
-@media(max-width: 400px){
+.glow{
+    border-radius: 100%;
+    box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px red,   /* inner left magenta short */
+    inset -20px 0 80px black,  /* inner right cyan short */
+    inset 20px 0 300px red,  /* inner left magenta broad */
+    inset -20px 0 300px black, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px red,        /* outer left magenta */
+    10px 0 80px black;         /* outer right cyan */
+}
+
+
+
+
+
+    @media(max-width: 400px){
 .game{
     height: 106px;
    
@@ -116,6 +192,7 @@ h1{
 .mole{
     height: 100px;
     width: 100px;
+    
 }
 
 img{
@@ -124,3 +201,4 @@ img{
 }
 
 }
+
