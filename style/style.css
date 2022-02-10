@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 *{
-    font-family: 'DotGothic16', sans-serif;
-    
-    
+    font-family: 'DotGothic16', sans-serif; 
 }
 
 #scrnum{
@@ -178,7 +176,12 @@ h1{
     @media(max-width: 400px){
         #scrnum{
             color: red;
-            font-size: 14px;
+            font-size: 25px;
+            margin: 1px 1px 1px 1px;
+        }
+
+        body{
+            height: 400px;
         }
         
         .flex-container{
@@ -244,9 +247,10 @@ h1{
         
         .varMessage{
             grid-column: 2;
-            grid-row: 5;
+            grid-row: 4;
             text-align: center;
             font-size: 1em;
+            grid-column: 1/ span 3;
         }
         
         
@@ -255,7 +259,7 @@ h1{
             font-size: 25px;
             grid-column: 1;
             grid-row: 5;
-            max-width: 100%;
+            margin: 1px 1px 1px 1px
         
         }
         #lives{
