@@ -1,32 +1,25 @@
 const board = document.getElementsByClassName("board");
 const moles = document.getElementsByClassName("mole");
 const rstBtn = document.getElementById("restartButton");
-scoreOrigin = document.getElementById("score").innerText;
 livesOrgin = document.getElementById("lives").innerText;
 const strBtn = document.getElementById(`startbtn`);
 let hitSound = new Audio("mixkit-little-squeak-1018.wav");
 let missSound = new Audio(`mixkit-cartoon-voice-laugh-343.wav`);
 let gOverSound = new Audio(`mixkit-funny-fail-low-tone-2876.wav`);
 let startSound = new Audio(`mixkit-arcade-game-opener-222.wav`);
-let windOne = document.getElementById('windOne')
-let windTwo = document.getElementById('windTwo')
+let windOne = document.getElementById("windOne");
+let windTwo = document.getElementById("windTwo");
 startSound.volume = 0.1;
-gOverSound.volume= 0.2;
+gOverSound.volume = 0.2;
 missSound.volume = 0.2;
-hitSound.volume =0.2
-// const score = scoreOrigin.innerText
+hitSound.volume = 0.2;
 
 // Hide start button on click
 // create art assets for
 
-scoreOrigin = `22`;
-
 lives = 3;
 
 clickedMoles = 0;
-
-console.log(rstBtn);
-console.log(moles);
 
 let arrayOfMoles = Array.from(moles);
 
@@ -43,14 +36,11 @@ arrayOfMoles.forEach(function (elem) {
     // hole.classList.add("glow");
     elem.classList.add(`hide`);
     hitSound.play();
-    console.log(`YOU HIT DA MOLE`);
-
     elem.classList.add("glow");
     document.getElementById(
       "livemes"
     ).innerText = `You gave that mole a SHMACKIN`;
     score++;
-    console.log(`The score is ${score}`);
     document.getElementById("scrnum").innerText = `${score}`;
     clickedMoles = clickedMoles + 1;
   });
@@ -72,31 +62,12 @@ function randomHole(arrayOfMoles) {
   const hole = arrayOfMoles[hlnm];
   //if hole is the same hole as last time, run again.
   if (hole === lastHole) {
-    console.log("duplicate hole");
+    // console.log("duplicate hole");
     return randomHole(arrayOfMoles);
   }
   lastHole = hole;
   return hole;
 }
-
-// function lifeCounter(){
-//   if(clickedMoles >= moleCounter -1  ){
-//     console.log(`${score} <-clickedMoles lives-> ${lives} ->${moleCounter}` );
-//     lives = lives;
-//     document.getElementById('lives').innerText = lives;
-//     moleCounter-1
-//   } else if (clickedMoles < moleCounter -2 ){
-//     console.log(`${clickedMoles} <-ClickedMoles lives-> ${lives} ->${moleCounter}` );
-//     lives = lives-1;
-//     moleCounter = moleCounter-1;
-//     document.getElementById('lives').innerText = lives;
-
-//   }
-// }
-
-//game funtction that ties it all together, random holes and random times.
-
-// console.log(randomTime(1100,1500))
 
 let game = function RunGame() {
   let int = setInterval(molePeep, 3000);
@@ -134,21 +105,14 @@ let game = function RunGame() {
     rstBtn.classList.remove("hide");
     gOverSound.play();
     score = score - score;
-    document.getElementById("Farmer").src = "RIP.png"
-    document.getElementById("Molo").src = "Animal Farm.png"
-    document.getElementById('title').innerText = 'Mole Farm';
-    document.getElementById('vmes').innerText = 'lost to';
-    windOne.classList.remove('hide');
-    windTwo.classList.remove('hide');
-    document.getElementById('orwellMes').innerText = '"All animals are equal but some animals are more equal than others." -George Orwell, Animal Farm'
-
-
-    
-    
-
-
-
-    // document.getElementsByClassName(`button`).classList.remove(`hide`);
+    document.getElementById("Farmer").src = "RIP.png";
+    document.getElementById("Molo").src = "Animal Farm.png";
+    document.getElementById("title").innerText = "Mole Farm";
+    document.getElementById("vmes").innerText = "lost to";
+    windOne.classList.remove("hide");
+    windTwo.classList.remove("hide");
+    document.getElementById("orwellMes").innerText =
+      '"All animals are equal but some animals are more equal than others." -George Orwell, Animal Farm';
   }
 
   function liveChecking() {
@@ -185,15 +149,17 @@ let reset = function resetGame() {
   rstBtn.classList.add("hide");
   startSound.play();
   document.getElementById("scrnum").innerText = `${score}`;
-  document.getElementById("Farmer").src = "Untitled_Artwork 5.gif"
-    document.getElementById("Molo").src = "Untitled_Artwork 2.gif"
-    document.getElementById('title').innerText = 'Wack-a-Mole!'
-    document.getElementById("livemes").innerText = `Snowball let the farmers back in!`;
-    document.getElementById('vmes').innerText = 'VERSUS';
-    windOne.classList.add('hide');
-    windTwo.classList.add('hide');
-    document.getElementById('orwellMes').innerText = 'Mole-catching has been practiced for thousands of years! Archeologist have found evidence that as far back as the roman empire, farmers either constructed their own mole traps or hired tradesman to assist in catching those pesty moles!'
-    
+  document.getElementById("Farmer").src = "Untitled_Artwork 5.gif";
+  document.getElementById("Molo").src = "Untitled_Artwork 2.gif";
+  document.getElementById("title").innerText = "Wack-a-Mole!";
+  document.getElementById(
+    "livemes"
+  ).innerText = `Snowball let the farmers back in!`;
+  document.getElementById("vmes").innerText = "VERSUS";
+  windOne.classList.add("hide");
+  windTwo.classList.add("hide");
+  document.getElementById("orwellMes").innerText =
+    "Mole-catching has been practiced for thousands of years! Archeologist have found evidence that as far back as the roman empire, farmers either constructed their own mole traps or hired tradesman to assist in catching those pesty moles!";
 };
 rstBtn.addEventListener("click", reset);
 

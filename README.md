@@ -18,25 +18,35 @@ Game>
 
 =MVP GOALS=
 
--9 holes
--moles pop out of holes at random interval
--miss three moles and you lose
--score++ when you hit a mole
--custom assets for 
-/mole 
-/mole hit
-/mole not hit
+-9 holes *Completed*
+-moles pop out of holes at random interval *Completed*
+-miss three moles and you lose *Completed*
+-score++ when you hit a mole *Completed*
+-custom assets *Completed*
 
 
 =STRETCH GOALS=
--Custom board asset for background
--moving animations
+-Custom board asset for background 
+-animations *Completed*
 -Persistent ScoreBoard
--stylized window and button
+-stylized window and button *Completed*
+-Orwellian Theme and assets *Completed*
+-Fun Fact Section *Completed*
+-Favicon *Completed*
+-Lives heart Icons *Completed*
+
 
 =POTENTIAL ROADBLOCKS=
 -Random elements creating bugs
 - difficulty balancing
+
+== IF I HAD TO DO IT ALL OVER ==
+- Use canvas to create Depth Elements
+- Create several animations and characters for more diversity
+- Use flexbox over grid if not using canvas.. Would be easier to fill sides of pages with content without messing with board
+-Custom Title GIF for transition to Mole Farm
+-Wack-a-Pig would be more on par for Animal Farm references
+
 
 CUSTOM ASSETS - created by Triston J. Palacios
 -Monica the Mole
@@ -50,6 +60,7 @@ CUSTOM ASSETS - created by Triston J. Palacios
 -Mr. Jones Gravestone
 
 credits
+-Sound Effects : Mixit
 -wood background: Simon Sanchez Madera Tilex;
 https://fackingtroll.artstation.com/projects/nBX59
 -grassbackground: https://www.dreamstime.com/pixel-art-grass-background-seamless-lawn-texture-backdrop-vector-illustration-image223655094
