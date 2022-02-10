@@ -140,6 +140,8 @@ let game = function RunGame() {
     document.getElementById('vmes').innerText = 'lost to';
     windOne.classList.remove('hide');
     windTwo.classList.remove('hide');
+    document.getElementById('orwellMes').innerText = '"All animals are equal but some animals are more equal than others." -George Orwell, Animal Farm'
+
 
     
     
@@ -190,6 +192,7 @@ let reset = function resetGame() {
     document.getElementById('vmes').innerText = 'VERSUS';
     windOne.classList.add('hide');
     windTwo.classList.add('hide');
+    document.getElementById('orwellMes').innerText = 'Mole-catching has been practiced for thousands of years! Archeologist have found evidence that as far back as the roman empire, farmers either constructed their own mole traps or hired tradesman to assist in catching those pesty moles!'
     
 };
 rstBtn.addEventListener("click", reset);

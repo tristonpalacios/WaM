@@ -38,9 +38,18 @@ Game>
 -Random elements creating bugs
 - difficulty balancing
 
-credits
+CUSTOM ASSETS - created by Triston Palacios
+-Monica the Mole
+-Hammer Cursor
+-Monica Favicon
+-Monica Digging
+-3 Heart , 2 Heart , 1 Heart
+-Mr Jones
+-Windmill
+-Monica with Animal Farm Flag
+-Mr. Jones Gravestone
 
-Monica the Mole, Mr. Jones, Windmill, Heart(lives), Monica Digging, Tombstone: - Triston J Palacios
+credits
 -wood background: Simon Sanchez Madera Tilex;
 https://fackingtroll.artstation.com/projects/nBX59
 -grassbackground: https://www.dreamstime.com/pixel-art-grass-background-seamless-lawn-texture-backdrop-vector-illustration-image223655094
