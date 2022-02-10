@@ -8,7 +8,12 @@ let hitSound = new Audio("mixkit-little-squeak-1018.wav");
 let missSound = new Audio(`mixkit-cartoon-voice-laugh-343.wav`);
 let gOverSound = new Audio(`mixkit-funny-fail-low-tone-2876.wav`);
 let startSound = new Audio(`mixkit-arcade-game-opener-222.wav`);
+let windOne = document.getElementById('windOne')
+let windTwo = document.getElementById('windTwo')
 startSound.volume = 0.1;
+gOverSound.volume= 0.2;
+missSound.volume = 0.2;
+hitSound.volume =0.2
 // const score = scoreOrigin.innerText
 
 // Hide start button on click
@@ -105,9 +110,6 @@ let game = function RunGame() {
     setTimeout(() => {
       hole.classList.add("hide");
     }, time);
-    setTimeout(() => {
-      hole.classList.remove("glow");
-    }, time);
 
     moleCounter++;
     console.log(`${moleCounter} moles have appeared`);
@@ -132,6 +134,17 @@ let game = function RunGame() {
     rstBtn.classList.remove("hide");
     gOverSound.play();
     score = score - score;
+    document.getElementById("Farmer").src = "RIP.png"
+    document.getElementById("Molo").src = "Animal Farm.png"
+    document.getElementById('title').innerText = 'Mole Farm';
+    document.getElementById('vmes').innerText = 'lost to';
+    windOne.classList.remove('hide');
+    windTwo.classList.remove('hide');
+
+    
+    
+
+
 
     // document.getElementsByClassName(`button`).classList.remove(`hide`);
   }
@@ -170,6 +183,14 @@ let reset = function resetGame() {
   rstBtn.classList.add("hide");
   startSound.play();
   document.getElementById("scrnum").innerText = `${score}`;
+  document.getElementById("Farmer").src = "Untitled_Artwork 5.gif"
+    document.getElementById("Molo").src = "Untitled_Artwork 2.gif"
+    document.getElementById('title').innerText = 'Wack-a-Mole!'
+    document.getElementById("livemes").innerText = `Snowball let the farmers back in!`;
+    document.getElementById('vmes').innerText = 'VERSUS';
+    windOne.classList.add('hide');
+    windTwo.classList.add('hide');
+    
 };
 rstBtn.addEventListener("click", reset);
 

@@ -5,6 +5,18 @@
     zoom: 90%;
 }
 
+#windOne{
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+#windTwo{
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+}
+
 #scrnum{
     color: red;
     font-size: 44px;
