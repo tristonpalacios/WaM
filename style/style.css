@@ -142,11 +142,12 @@ h1{
 
 .hole
 {
-    border: solid black 1px;
+    border: dotted brown 9px;
   display: grid;
   justify-content: center;
   align-items: center;
   background-size: cover;
+  background-image: ;
   border-radius: 100%;
   background-image: 
   /* cursor: url(/Hammer\ Clicker.png), pointer ; */
