@@ -38,4 +38,11 @@ Game>
 -Random elements creating bugs
 - difficulty balancing
 
+credits
+
+Monica the Mole, Mr. Jones, Windmill, Heart(lives), Monica Digging, Tombstone: - Triston J Palacios
+-wood background: Simon Sanchez Madera Tilex;
+https://fackingtroll.artstation.com/projects/nBX59
+-grassbackground: https://www.dreamstime.com/pixel-art-grass-background-seamless-lawn-texture-backdrop-vector-illustration-image223655094
+
 

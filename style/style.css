@@ -147,7 +147,7 @@ h1{
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background-image: ;
+  background-image: url(/pixel-art-grass-background-seamless-lawn-texture-backdrop-vector-illustration-223655094.jpeg);
   border-radius: 100%;
   background-image: 
   /* cursor: url(/Hammer\ Clicker.png), pointer ; */
@@ -173,18 +173,6 @@ h1{
    
 
 }
-
-/* .glow{
-    border-radius: 100%;
-    box-shadow:
-    inset 0 0 50px #fff,      /* inner white */
-    inset 20px 0 80px red,   /* inner left magenta short */
-    inset -20px 0 80px black,  /* inner right cyan short */
-    inset 20px 0 300px red,  /* inner left magenta broad */
-    inset -20px 0 300px black, /* inner right cyan broad */
-    0 0 50px #fff,            /* outer white */
-    -10px 0 80px red,        /* outer left magenta */
-    10px 0 80px black;    }    /* outer right cyan */
 
 
 
