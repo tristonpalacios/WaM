@@ -38,7 +38,7 @@ Game>
 -Random elements creating bugs
 - difficulty balancing
 
-CUSTOM ASSETS - created by Triston Palacios
+CUSTOM ASSETS - created by Triston J. Palacios
 -Monica the Mole
 -Hammer Cursor
 -Monica Favicon
