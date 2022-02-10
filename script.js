@@ -33,10 +33,8 @@ arrayOfMoles.forEach(function (elem) {
   elem.addEventListener("mousedown", function () {
     const hole = randomHole(arrayOfMoles);
     //this function does stuff when you click
-    // hole.classList.add("glow");
     elem.classList.add(`hide`);
     hitSound.play();
-    elem.classList.add("glow");
     document.getElementById(
       "livemes"
     ).innerText = `You gave that mole a SHMACKIN`;
