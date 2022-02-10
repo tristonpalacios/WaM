@@ -176,7 +176,10 @@ h1{
 
 
 
-    @media(max-width: 400px){
+    @media(max-width: 500px){
+        *{
+            zoom: normal;
+        }
         #scrnum{
             color: red;
             font-size: 25px;
@@ -359,6 +362,9 @@ h1{
             height: 150px;
             width: 150px;
         }
+
+        .credits{
+            font-size: .3em;
 
 }
 
