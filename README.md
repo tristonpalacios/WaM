@@ -59,13 +59,21 @@ status counter (i.e. where it tells you if you hit the mole or it got away , and
 
 # CUSTOM ASSETS - created by Triston J. Palacios
 * Monica the Mole 
+![Monica the Mole](https://github.com/tristonpalacios/WaM/blob/main/Untitled_Artwork%202.gif)
 * Hammer Cursor 
+![Hammer Clicker](https://github.com/tristonpalacios/WaM/blob/main/Hammer%20Clicker.png)
 * Monica Digging 
-* 3 Heart , 2 Heart , 1 Heart ![Three Hearts](https://github.com/tristonpalacios/WaM/blob/main/three%20heart.png)
+![Mole Dig](https://github.com/tristonpalacios/WaM/blob/main/Dig.gif)
+* 3 Heart , 2 Heart , 1 Heart 
+![Three Hearts](https://github.com/tristonpalacios/WaM/blob/main/three%20heart.png)
 * Mr Jones
+* ![Mr.Jones](https://github.com/tristonpalacios/WaM/blob/main/Untitled_Artwork%205.gif)
 * Windmill
+![Windmill](https://github.com/tristonpalacios/WaM/blob/main/windmill.gif)
 * Monica with Animal Farm Flag
+![Monican with Animal Farm Flag](https://github.com/tristonpalacios/WaM/blob/main/Animal%20Farm.png)
 * Mr. Jones Gravestone
+* ![GraveStone](https://github.com/tristonpalacios/WaM/blob/main/RIP.png)
 
 # credits
 * *Sound Effects : Mixit
