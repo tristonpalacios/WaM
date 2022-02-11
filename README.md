@@ -1,5 +1,8 @@
 # Wack-a-Mole
 
+link to game
+https://tristonpalacios.github.io/WaM/
+
 SEIR 0124
 # ELEVATOR PITCH
 
