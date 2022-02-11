@@ -45,6 +45,7 @@ status counter (i.e. where it tells you if you hit the mole or it got away , and
 * Fun Fact Section *Completed*
 * Favicon *Completed*
 * Lives heart Icons *Completed*
+* IPhone 12 Version *Completed*
 
 
 # POTENTIAL ROADBLOCKS=
