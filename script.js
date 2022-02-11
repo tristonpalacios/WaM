@@ -68,12 +68,12 @@ function randomHole(arrayOfMoles) {
 }
 
 let game = function RunGame() {
-  let int = setInterval(molePeep, 3000);
+  let int = setInterval(molePeep, 2000);
   strBtn.classList.add(`hide`);
   startSound.play();
 
   function molePeep() {
-    const time = randomTime(400, 1100);
+    const time = randomTime(400, 1000);
     const hole = randomHole(arrayOfMoles);
     hole.classList.remove("hide");
     setTimeout(() => {
