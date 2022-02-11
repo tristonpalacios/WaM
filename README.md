@@ -24,6 +24,8 @@ Game
 hidden moles that pop up for random inverals
 Lives counter
 status counter (i.e. where it tells you if you hit the mole or it got away , and when you lose)
+![image](https://user-images.githubusercontent.com/97129216/153537275-12914d83-f153-458e-9893-c6c2f13e90f2.png)
+
 
 # MVP GOALS
 
