@@ -61,7 +61,7 @@ status counter (i.e. where it tells you if you hit the mole or it got away , and
 * Monica the Mole 
 * Hammer Cursor 
 * Monica Digging 
-* 3 Heart , 2 Heart , 1 Heart 
+* 3 Heart , 2 Heart , 1 Heart /Users/tristonpalacios/Documents/GA-Spring-Forward/projects/WaM/three heart.png
 * Mr Jones
 * Windmill
 * Monica with Animal Farm Flag
