@@ -3,7 +3,7 @@
 SEIR 0124
 # ELEVATOR PITCH
 
-Nothing better than turning a brutal reality of the prarie into a JS game! What is there to say? When the moles pop up, shmack em and get points! If you miss 3 of those pesty moles, you're donezo and so is your farm! Get to work !
+Nothing better than turning a brutal reality of the prarie into a JS game! What is there to say? When the moles pop up, shmack em(CLICK THEIR CUTE LITTLE HEADS) and get points! If you miss 3 of those pesty moles, you're donezo and so is your farm! Get to work !
 
 ## Tech Used
 
